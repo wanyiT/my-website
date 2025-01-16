@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的资源集合</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .resource-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .resource-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .resource-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .resource-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #666666;
+    }
+  </style>
+</head>
+<body>
+  <h1>我的资源集合</h1>
+
+  <div class="resource-container">
+    <!-- 示例资源 1 -->
+    <div class="resource-card" onclick="window.open('https://www.google.com', '_blank')">
+      <img src="https://www.google.com/favicon.ico" alt="Google">
+      <p>Google</p>
+    </div>
+
+    <!-- 示例资源 2 -->
+    <div class="resource-card" onclick="window.open('https://www.github.com', '_blank')">
+      <img src="https://github.githubassets.com/favicon.ico" alt="GitHub">
+      <p>GitHub</p>
+    </div>
+
+    <!-- 示例资源 3 -->
+    <div class="resource-card" onclick="window.open('https://www.w3schools.com', '_blank')">
+      <img src="https://www.w3schools.com/favicon.ico" alt="W3Schools">
+      <p>W3Schools</p>
+    </div>
+
+    <!-- Thingiverse -->
+    <div class="resource-card" onclick="window.open('https://www.thingiverse.com', '_blank')">
+      <img src="https://www.thingiverse.com/favicon.ico" alt="Thingiverse">
+      <p>Thingiverse</p>
+    </div>
+
+    <!-- MakerWorld -->
+    <div class="resource-card" onclick="window.open('https://makerworld.com', '_blank')">
+      <img src="https://makerworld.com/favicon.ico" alt="MakerWorld">
+      <p>MakerWorld</p>
+    </div>
+
+    <!-- Cults3D -->
+    <div class="resource-card" onclick="window.open('https://cults3d.com', '_blank')">
+      <img src="https://cults3d.com/favicon.ico" alt="Cults3D">
+      <p>Cults3D</p>
+    </div>
+
+    <!-- TurboSquid -->
+    <div class="resource-card" onclick="window.open('https://www.turbosquid.com/zh_cn/', '_blank')">
+      <img src="https://www.turbosquid.com/favicon.ico" alt="TurboSquid">
+      <p>TurboSquid</p>
+    </div>
+
+    <!-- The Pirate Bay (TPB) -->
+    <div class="resource-card" onclick="window.open('https://tpb.party', '_blank')">
+      <img src="https://tpb.party/favicon.ico" alt="The Pirate Bay">
+      <p>The Pirate Bay</p>
+    </div>
+  </div>
+</body>
+</html>
